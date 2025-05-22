@@ -1,5 +1,6 @@
 # R3_Reproduce_Code
 This project reproduces a fileless malware attack based on the paper 'JSLess: A Tale of Fileless JavaScript Memory-Resident Malware'. The setup involves two servers: a legitimate server and a malicious server, both developed using Node.js.
+
 Steps:
 •	Install Node.js (v14.x or later) and npm (v6.x or later).
 •	Clone the repository: git clone <repository-url>.
@@ -9,6 +10,7 @@ Steps:
 •	Navigate to the malicious server: cd malicious-server.
 •	Install dependencies: npm init -y and npm install express ws.
 •	Start the malicious server: node mal-server.js (runs on ports 5000 and 5001).
+ 
  Verify IP Addresses
 •	On your system, use ipconfig or ifconfig to verify both servers are on the same network.
 •	Ensure ports 3000, 5000, and 5001 are not blocked by the firewall.
@@ -21,6 +23,7 @@ Scenario 3: ServiceWorker Persistence
 •	ServiceWorker is registered via WebSocket delivery.
 •	Allows continued background communication even after the browser is closed.
 •	Verify persistence by inspecting network activity and file logs after closing the browser.
+
 Troubleshooting
 •	Ensure the correct Node.js version is installed.
 •	Run npm install in each server directory if dependencies are missing.
