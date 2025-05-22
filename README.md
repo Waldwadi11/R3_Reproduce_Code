@@ -19,12 +19,12 @@ Functionality Verification
 •	Type sample input to simulate keystrokes.
 •	Verify keystrokes are logged in keyLog.txt on the malicious server.
 •	Verify cookies are logged in cookieLog.txt.
-Scenario 3: ServiceWorker Persistence
+# Scenario 3: ServiceWorker Persistence
 •	ServiceWorker is registered via WebSocket delivery.
 •	Allows continued background communication even after the browser is closed.
 •	Verify persistence by inspecting network activity and file logs after closing the browser.
 
-Troubleshooting
+# Troubleshooting
 •	Ensure the correct Node.js version is installed.
 •	Run npm install in each server directory if dependencies are missing.
 •	Change default ports if already in use.
